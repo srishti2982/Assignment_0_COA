@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\begin{document}
+
+\title{CS311 Assignment-0}
+\author{\LARGE Group: 180010022, 180010026, 180010035}
+
+\maketitle
+
+{\LARGE In our algorithm, we assumed that the infiltrator will move only to the {\bf 3 sensors} in-front of him out of the 8 sensors around him.\\
+\\
+In the figure given below, the red box is where the infiltrator is standing at the moment, and the blue boxes below red box are the three sensors to anyone of which the infiltrator tries to move in his/her next step.\\ \\}
+\begin{tikzpicture}
+
+\fill[red!80!white] (1,1) rectangle (2,2);
+\draw[step=1cm,black, thin] (0,0) grid (3,3);
+\fill[blue!50!white] (0,0) rectangle (1,1);
+\fill[blue!50!white] (1,0) rectangle (2,1);
+\fill[blue!50!white] (2,0) rectangle (3,1);
+\draw[step=1cm,black,very thick] (0,0) grid (3,1);
+\draw[step=1cm,gray,thin] (-2,-2) grid (9,3);
+\end{tikzpicture}
+\\ \\
+{\huge Output:}\\
+
+{\LARGE Output is a grid in which along the rows {\bf width} is constant and along the columns {\bf probability(p)} is constant.\\ \\}
+
+
+{\huge Observations:\\ \\}
+{\LARGE Relation between time and probability(p): {\bf linearity}\\
+Relation between time and width: {\bf exponential and linear}}
+
+\end{document}
